@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas en Imágenes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h1 class="app-title">AreaCalc</h1>
+            <div class="control-group">
+                <button id="btnNewProject" class="btn btn-secondary">Nuevo Proyecto</button>
+            </div>
+            
+            <div class="control-group">
+                <label for="imageUpload" class="btn btn-primary file-label">Importar Imagen</label>
+                <input type="file" id="imageUpload" accept="image/*" class="hidden">
+            </div>
+
+            <div class="control-group">
+                <button id="btnCalibrate" class="btn btn-action" disabled>Calibrar Escala</button>
+                <p id="calibrationStatus" class="status-text">Escala no calibrada.</p>
+            </div>
+
+            <div class="control-group">
+                <button id="btnDraw" class="btn btn-action" disabled>Trazar Contorno</button>
+                <p id="drawStatus" class="status-text">Selecciona un área para medir.</p>
+            </div>
+
+            <div class="info-panel">
+                <h3>Instrucciones</h3>
+                <p id="instructionText">Importa una imagen para comenzar.</p>
+            </div>
+        </aside>
+
+        <main class="canvas-container">
+            <canvas id="mainCanvas"></canvas>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
