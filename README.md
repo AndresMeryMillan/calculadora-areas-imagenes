@@ -94,6 +94,4 @@ Al ser una aplicación web estática sin dependencias de Node.js ni compiladores
 
 * **Andrés Mery** - *Desarrollo de interfaz, implementación de Canvas y algoritmos geométricos*.
 
-## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más información.
